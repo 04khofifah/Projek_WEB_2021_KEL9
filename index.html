@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <ul>
+        <li><a href="./login.php">Login</a></li>
+        <li><a href="./register.php">Register</a></li>
+
+    </ul>
+
+    <title></title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(146, 56, 56);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #FCB61A;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .container {
+            margin: 0;
+            max-width: 750px;
+            margin: 10vh auto 0 auto;
+        }
+
+        .container>div {
+            display: inline-block;
+        }
+
+        #slideshow {
+            margin: 0;
+            position: relative;
+            width: 620px;
+            height: 250px;
+        }
+
+        #slideshow>div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #slideshow img {
+            width: 100%;
+            margin: 0;
+            border: solid 1px #283593;
+        }
+
+        a#aslide {
+            width: 40px;
+            font-size: 64px;
+            display: inline-block;
+            color: #9FA8DA;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 400px;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+            margin: 20px 20px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card_container {
+            padding: 2px 16px;
+        }
+
+        .btn-yl {
+            border-radius: 12px;
+            background-color: #FCB61A;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<div class="card" style="width: 100%; margin: 20px 0;">
+    <div class="card_container">
+        <div class="" style="display: flex;">
+            <div class="" style="flex:1; max-width: 200px;">
+                <img src="./images/logo.jpeg" style="object-fit: cover; max-width: 200px; height: 200px;"
+                    alt="">
+            </div>
+            <div style="flex:3; text-align: center;">
+                <h1 style="flex:3">Selamat Datang Di Rumah Makan Ampera</h1>
+                <h2>Rumah Makan Selera Anda</h2>
+                <p>Lokasi : Jln. Jendral Sudirman</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=container>
+    <a id="aslide" href="#" class="arrowL">&lt;</a>
+    <div id="slideshow">
+        <div><img src="./images/slideshows/slideshow1.jpeg" /></div>
+        <div class="hidden"><img src="./images/slideshows/slideshow2.jpeg" /></div>
+        <div class="hidden"><img src="./images/slideshows/slideshow3.jpeg" /></div>
+    </div>
+    <a id="aslide" href="#" class="arrowR">&gt;</a>
+</div>
+
+<h5 style="margin-bottom: 0px; color: #FCB61A;">Menu Utama</h1>
+    <h1 style="margin-top: 10px;">Menu Terlaris di restoran kami
+</h5>
+
+<div style="display: flex;">
+    <div class="card card-menu" style="flex:1;">
+        <img src="./images/makanan/ayam_goreng_sambal.jpg" alt="" style="width:100%">
+        <div class="card_container">
+            <h4><b>Ayam Goreng Sambal</b></h4>
+        </div>
+    </div>
+    <div class="card card-menu" style="flex:1;">
+        <img src="./images/makanan/ikan_bakar_sarden.jpg" alt="" style="width:100%">
+        <div class="card_container">
+            <h4><b>Ikan Bakar Sarden</b></h4>
+        </div>
+    </div>
+    <div class="card card-menu" style="flex:1;">
+        <img src="./images/makanan/perkedel_kentang.jpg" alt="" style="width:100%">
+        <div class="card_container">
+            <h4><b>Perkedel Kentang</b></h4>
+        </div>
+    </div>
+    <div class="card card-menu" style="flex:1;">
+        <img src="./images/makanan/ayam_saos_teriyaki.jpg" alt="" style="width:100%">
+        <div class="card_container">
+            <h4><b>Ayam Saos Teriyaki</b></h4>
+        </div>
+    </div>
+</div>
+<div style="text-align: center;">
+    <a href="./profil.html" class="btn-yl" style="padding: 20px; font-size: 16px;">Selengkapnya</a>
+</div>
+
+
+<!-- <div class="card">
+    <h1>s</h1>
+</div> -->
+<!-- <div class="card">
+   SELERA 
+</div> -->
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+var main = function () {
+
+    var paused = false
+
+    $('.arrowR').click(function () {
+        paused = true;
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    });
+
+    $('.arrowL').click(function () {
+        paused = true;
+        $('#slideshow > div:last')
+            .fadeIn(1000)
+            .prependTo('#slideshow')
+            .next()
+            .fadeOut(1000)
+            .end();
+    });
+
+
+
+    setInterval(function () {
+        if (paused === false) {
+            $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        };
+    }, 5000);
+
+
+};
+
+$(document).ready(main);
+</script>
