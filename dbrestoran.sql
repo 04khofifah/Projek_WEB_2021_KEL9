@@ -145,12 +145,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `username`, `password`, `nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`, `alamat`, `hp`, `status`) VALUES
-(1, 'daus', 'daus123', 'Alfirdaus Muhammad Farhan', 'Laki-Laki', '1998-05-14', 'Tanjung Piayu', '089560328673', 'admin'),
-(2, 'rinaldo', 'rinaldo123', 'Rinaldo', 'Laki-Laki', '1999-01-11', 'Tanjung Uma', '085233748222', 'user'),
-(3, 'admin', 'admin', 'Alfirdaus Muhammad Farhan', 'Laki-Laki', '1998-05-19', 'Tanjung Piayu', '089123614882', 'admin'),
-(4, 'user', 'user', 'Rinaldo', 'Laki-Laki', '1998-10-22', 'Tanjung Uma', '089560328673', 'user'),
-(5, 'rinaldo', 'rinaldo', 'Rinaldo', 'Laki-Laki', '1999-02-23', 'Tanjung Uma', '089123614882', 'user'),
-(6, 'daus', 'daus123', 'Alfirdaus Muhammad Farhan', 'Laki-Laki', '1998-05-14', 'Tanjung Piayu', '085233748222', 'admin');
+(1, 'manda', 'manda123', 'Khofifah Amanda', 'PEREMPUAN', '2002-05-14', 'SRAGEN', '089560328673', 'admin'),
+(2, 'user', 'user123', 'User Ampera', 'Laki-Laki', '2000-01-11', 'Malang', '085233748222', 'user'),
+(3, 'admin', 'admin123', 'Admin Ampera', 'Perempuan', '20001-05-19', 'Sragen Kota', '089123614882', 'admin');
 
 --
 -- Indexes for dumped tables
