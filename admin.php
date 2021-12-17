@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
 
-    <title>Bakso Solo Baru</title>
+    <title>RUMAH MAKAN AMPERA</title>
   </head>
   <body>
 
@@ -64,6 +64,8 @@
   <!-- Menu -->    
       <div class="container">
         <div class="judul text-center mt-5">
+        <img src="./images/logo.jpeg" style="object-fit: cover; max-width: 200px; height: 200px;"
+                    alt="">
           <h3 class="font-weight-bold">RUMAH MAKAN AMPERA</h3>
           <h5>Lokasi : Jln. Jendral Sudirman
           <br>Buka Jam <strong>16:00 - 23:00</strong></h5>
