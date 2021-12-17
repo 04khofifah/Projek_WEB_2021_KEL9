@@ -161,7 +161,7 @@ if(empty($_SESSION["pesanan"]) OR !isset($_SESSION["pesanan"]))
         <div class="row footer-body">
           <div class="col-md-6">
           <div class="copyright">
-            <strong>Copyright</strong> <i class="far fa-copyright"></i> 2020 -  Designed by Alfirdaus&Rinaldo</p>
+            <strong></strong> <i class="far fa-copyright"></i> khofifah amnada</p>
           </div>
           </div>
 
